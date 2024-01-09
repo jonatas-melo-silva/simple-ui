@@ -7,7 +7,7 @@ const meta: Meta<typeof Button> = {
   argTypes: {
     children: {
       control: 'text',
-      defaultValue: 'Button',
+      defaultValue: 'Click me',
     },
   },
   parameters: {
@@ -20,8 +20,21 @@ export default meta
 
 type Story = StoryObj<typeof Button>
 
-export const Default: Story = {
+export const Solid: Story = {
   args: {
     children: 'Button',
+    variant: 'solid',
+  },
+}
+export const Outline: Story = {
+  args: {
+    children: 'Button',
+    variant: 'outline',
+  },
+}
+export const Ghost: Story = {
+  args: {
+    children: 'Button',
+    variant: 'ghost',
   },
 }
