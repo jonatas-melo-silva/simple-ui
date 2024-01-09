@@ -26,12 +26,14 @@ export const Solid: Story = {
     variant: 'solid',
   },
 }
+
 export const Outline: Story = {
   args: {
     children: 'Button',
     variant: 'outline',
   },
 }
+
 export const Ghost: Story = {
   args: {
     children: 'Button',

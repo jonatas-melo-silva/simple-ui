@@ -1,6 +1,6 @@
 import { cn } from '@/libs'
 import { cva, VariantProps } from 'class-variance-authority'
-import { ComponentPropsWithoutRef, forwardRef } from 'react'
+import { ComponentPropsWithRef, forwardRef } from 'react'
 
 const buttonVariants = cva(
   [
@@ -52,7 +52,7 @@ const buttonVariants = cva(
   },
 )
 
-export type ButtonProps = ComponentPropsWithoutRef<'button'> &
+export type ButtonProps = ComponentPropsWithRef<'button'> &
   VariantProps<typeof buttonVariants>
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
