@@ -10,7 +10,7 @@ export type StackProps = BoxProps & VariantProps<typeof stackVariants>
 export const Stack = forwardRef<HTMLDivElement, StackProps>(
   ({ className, ...props }, ref) => {
     return (
-      <Box className={cn(stackVariants(), className)} {...props} ref={ref} />
+      <Box className={cn(stackVariants({ className }))} {...props} ref={ref} />
     )
   },
 )
